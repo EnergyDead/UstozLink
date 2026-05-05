@@ -116,10 +116,9 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
 .footer-links { display: flex; gap: 18px; }
 
 .marquee-page {
-  min-height: 100vh;
   padding: 72px 0;
-  display: grid;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   gap: 56px;
 }
 
