@@ -144,12 +144,20 @@ function App() {
         </div>
       </section>
 
-      <section className="section wrap showcase">
-        <div className="showcase-card">
+      <section className="section wrap showcase showcase-full split">
+        <div className="showcase-copy">
           <h2>What you actually get</h2>
-          <ul>
-            {whatYouGet.map((item) => <li key={item}>{item}</li>)}
-          </ul>
+          <p className="section-sub left">
+            Mentorship that feels curated, measurable, and ready to turn into real evidence of progress. These outcome blocks represent the concrete value your mentor invitation delivers.
+          </p>
+        </div>
+
+        <div className="showcase-clouds">
+          {whatYouGet.map((item, index) => (
+            <div className="cloud-card" key={item} style={{ animationDelay: `${index * 0.35}s` }}>
+              <span>{item}</span>
+            </div>
+          ))}
         </div>
       </section>
 
