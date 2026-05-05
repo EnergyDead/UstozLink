@@ -124,11 +124,13 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
   gap: 56px;
 }
 
-.marquee-group h2,
-.marquee-group .section-sub {
-  width: min(1100px, 92vw);
-  margin-left: auto;
-  margin-right: auto;
+.marquee-heading {
+  margin-bottom: 20px;
+}
+
+.marquee-heading h2,
+.marquee-heading .section-sub {
+  text-align: center;
 }
 
 .marquee-track-wrap {
