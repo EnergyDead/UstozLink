@@ -43,21 +43,6 @@ const howItWorks = [
   },
 ];
 
-
-const howItWorksHighlights = [
-  'Choose your mentor',
-  'Set your learning outcome',
-  'Generate invitation draft',
-  'Personalize your request',
-];
-
-const mentorReasonHighlights = [
-  'Clear intent, not “help me”.',
-  'Defined format from first message.',
-  'No onboarding friction for mentors.',
-  'Structured workflow with clear milestones.',
-];
-
 const mentorReasons = [
   'Request is specific and time-bounded, not generic “please mentor me”.',
   'Student shows preparation before first contact, which signals commitment.',
@@ -122,19 +107,6 @@ function MarqueeRow({ items, reverse = false, variant = 'card' }) {
   );
 }
 
-
-function StaticTextBlocks({ items }) {
-  return (
-    <div className="wrap static-text-row">
-      {items.map((item) => (
-        <article className="static-text-block" key={item}>
-          <p>{item}</p>
-        </article>
-      ))}
-    </div>
-  );
-}
-
 function App() {
   return (
     <div className="site">
@@ -159,7 +131,6 @@ function App() {
             <h2>How it works</h2>
             <p className="section-sub">A clear path from invitation to measurable mentorship progress.</p>
           </div>
-          <StaticTextBlocks items={howItWorksHighlights} />
           <MarqueeRow items={howItWorks} variant="card" />
         </div>
 
