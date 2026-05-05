@@ -38,8 +38,10 @@ body {
 
 .hero {
   text-align: center;
-  padding: 90px 24px 150px;
-  border-radius: 20px;
+  min-height: calc(100vh - 84px);
+  display: grid;
+  place-items: center;
+  padding: 70px 0;
   background:
     radial-gradient(circle at center 62%, rgba(255,255,255,.3) 0%, rgba(255,255,255,.06) 28%, transparent 58%),
     #050505;
@@ -47,7 +49,22 @@ body {
   overflow: hidden;
 }
 
-.particles { position: absolute; inset: 0; background-image: radial-gradient(#c9c9c9 1px, transparent 1px); background-size: 130px 130px; opacity: .2; pointer-events: none; }
+.hero-content { position: relative; z-index: 1; }
+
+.particles {
+  position: absolute;
+  inset: -130px 0 0;
+  background-image: radial-gradient(#c9c9c9 1px, transparent 1px);
+  background-size: 130px 130px;
+  opacity: .2;
+  pointer-events: none;
+  animation: falling-stars 16s linear infinite;
+}
+
+@keyframes falling-stars {
+  from { transform: translateY(0); }
+  to { transform: translateY(130px); }
+}
 .eyebrow { color: #d0d0d0; font-size: 12px; margin: 0 0 14px; position: relative; }
 h1 { margin: 0; font-size: clamp(36px, 6vw, 66px); line-height: 1.06; position: relative; }
 .subtext { max-width: 740px; margin: 18px auto 0; color: #9b9b9b; line-height: 1.7; position: relative; }
@@ -104,5 +121,5 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
 @media (max-width: 680px) {
   .nav-links { display: none; }
   .grid.three, .grid.four, .split { grid-template-columns: 1fr; }
-  .hero { padding: 70px 18px 120px; }
+  .hero { min-height: calc(100vh - 84px); padding: 50px 0; }
 }
