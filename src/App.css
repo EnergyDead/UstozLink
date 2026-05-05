@@ -183,10 +183,10 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
 }
 
 @media (max-width: 920px) {
-  .grid.three, .grid.four, .split, .static-text-row { grid-template-columns: 1fr 1fr; }
+  .grid.three, .grid.four, .split { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 680px) {
   .nav-links { display: none; }
-  .grid.three, .grid.four, .split, .static-text-row { grid-template-columns: 1fr; }
+  .grid.three, .grid.four, .split { grid-template-columns: 1fr; }
   .hero { min-height: calc(100vh - 84px); padding: 50px 0; }
 }
