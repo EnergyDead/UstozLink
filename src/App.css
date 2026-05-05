@@ -133,6 +133,15 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
   text-align: center;
 }
 
+
+.marquee-note {
+  margin: 4px auto 0;
+  text-align: center;
+  color: #c8c8c8;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .marquee-track-wrap {
   margin-top: 20px;
   width: 100%;
