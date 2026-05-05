@@ -169,13 +169,16 @@ function App() {
         <p className="section-sub strong">This is not a diary. This is proof of growth.</p>
       </section>
 
-      <section className="section wrap split">
-        <div>
-          <h2>Institutional Reporting</h2>
-          <p className="section-sub">Export your Growth Ledger for:</p>
-          <ul className="report-list">{reports.map((r) => <li key={r}>{r}</li>)}</ul>
+      <section className="section wrap institutional">
+        <h2>Institutional Reporting</h2>
+        <p className="section-sub">
+          Export your verified Growth Ledger to universities, employers, internship programs, and grant committees. Your mentorship outcomes become official proof of growth and achievement.
+        </p>
+        <div className="institution-list">
+          {reports.map((r) => (
+            <span key={r} className="institution-tag">{r}</span>
+          ))}
         </div>
-        <div className="mock-panel" aria-hidden="true" />
       </section>
 
       <section className="section wrap more-features">
@@ -190,9 +193,22 @@ function App() {
         </div>
       </section>
 
-      <section className="section wrap final-cta">
-        <h2>Start your first mentor invitation</h2>
-        <button className="btn btn-light" type="button">Get started</button>
+      <section className="final-cta">
+        <div className="cta-stars" aria-hidden="true">
+          <span className="cta-star" style={{ width: '48px', height: '48px', left: '8%', top: '12%', animationDuration: '3.2s' }} />
+          <span className="cta-star" style={{ width: '32px', height: '32px', left: '82%', top: '18%', animationDuration: '4.1s' }} />
+          <span className="cta-star" style={{ width: '40px', height: '40px', left: '7%', top: '75%', animationDuration: '3.8s' }} />
+          <span className="cta-star" style={{ width: '36px', height: '36px', left: '85%', top: '70%', animationDuration: '4.5s' }} />
+          <span className="cta-star" style={{ width: '28px', height: '28px', left: '50%', top: '8%', animationDuration: '3.5s' }} />
+          <span className="cta-star" style={{ width: '44px', height: '44px', left: '12%', top: '45%', animationDuration: '4.2s' }} />
+        </div>
+        <div className="wrap">
+          <div className="cta-content">
+            <h2>UstozLink has no limitation.</h2>
+            <h2 className="cta-subheading">Get started on your mentor journey.</h2>
+            <button className="btn btn-light" type="button">Create an Account</button>
+          </div>
+        </div>
       </section>
 
       <footer className="footer wrap">
