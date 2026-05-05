@@ -57,14 +57,16 @@ function App() {
     <div className="site">
       <Header />
 
-      <section className="hero wrap">
+      <section className="hero">
         <div className="particles" aria-hidden="true" />
+        <div className="hero-content wrap">
         <p className="eyebrow">UstozLink</p>
         <h1>Invite your ideal mentor.<br />Turn mentorship into proof.</h1>
         <p className="subtext">You don’t wait to be chosen. You invite the right professional — and turn mentorship into a structured, verifiable Growth Ledger.</p>
         <div className="actions">
           <button className="btn btn-outline" type="button">Get Mentor Invitation</button>
           <button className="btn btn-light" type="button">Learn more</button>
+        </div>
         </div>
       </section>
 
