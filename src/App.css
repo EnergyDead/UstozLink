@@ -134,29 +134,12 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
 }
 
 
-
-
-.static-text-row {
-  margin-top: 6px;
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.static-text-block {
-  background: #0a0c10;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 14px;
-  min-height: 64px;
-  padding: 14px 18px;
-  display: grid;
-  align-content: center;
-}
-
-.static-text-block p {
-  margin: 0;
-  color: #d8d8d8;
-  line-height: 1.35;
+.marquee-note {
+  margin: 4px auto 0;
+  text-align: center;
+  color: #c8c8c8;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .marquee-track-wrap {

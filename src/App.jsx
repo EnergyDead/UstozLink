@@ -168,7 +168,7 @@ function App() {
             <h2>Why mentors accept</h2>
             <p className="section-sub emphasis">Mentors don’t join a platform. They respond to a well-prepared person.</p>
           </div>
-          <StaticTextBlocks items={mentorReasonHighlights} />
+          <p className="marquee-note wrap">The moving blocks stay as they are — this line adds context above them.</p>
           <MarqueeRow items={mentorReasons} reverse variant="mini" />
         </div>
       </section>
