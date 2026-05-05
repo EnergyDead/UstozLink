@@ -127,14 +127,18 @@ function App() {
 
       <section className="marquee-page">
         <div className="marquee-group">
-          <h2>How it works</h2>
-          <p className="section-sub">A clear path from invitation to measurable mentorship progress.</p>
+          <div className="marquee-heading wrap">
+            <h2>How it works</h2>
+            <p className="section-sub">A clear path from invitation to measurable mentorship progress.</p>
+          </div>
           <MarqueeRow items={howItWorks} variant="card" />
         </div>
 
         <div className="marquee-group">
-          <h2>Why mentors accept</h2>
-          <p className="section-sub emphasis">Mentors don’t join a platform. They respond to a well-prepared person.</p>
+          <div className="marquee-heading wrap">
+            <h2>Why mentors accept</h2>
+            <p className="section-sub emphasis">Mentors don’t join a platform. They respond to a well-prepared person.</p>
+          </div>
           <MarqueeRow items={mentorReasons} reverse variant="mini" />
         </div>
       </section>
