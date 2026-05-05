@@ -122,11 +122,13 @@ h2 { margin: 0; text-align: center; font-size: clamp(28px, 4vw, 44px); }
 .institution-list { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
 .institution-tag { padding: 10px 20px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 24px; font-size: 15px; color: #d4d4d4; font-weight: 500; }
 
-.more-features h2 { text-align: left; }
+.more-features { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 50vh; padding: 60px 0; }
+.more-features h2 { text-align: center; }
+.text-grid { max-width: 1100px; width: 100%; }
 .text-grid article h3 { margin: 0 0 10px; font-size: 20px; }
 .text-grid article p { margin: 0; color: #979797; }
 
-.final-cta { margin: 72px auto 0; max-width: 900px; padding: 64px 48px; border-radius: 24px; background: linear-gradient(140deg, #050608, #070809); text-align: center; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.final-cta { margin: 0 auto; max-width: 900px; padding: 64px 48px; border-radius: 24px; background: linear-gradient(140deg, #050608, #070809); text-align: center; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 50vh; }
 .cta-stars { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
 .cta-star { position: absolute; display: inline-block; background: rgba(255,255,255,.5); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); animation: twinkle-star 3.5s ease-in-out infinite; }
 @keyframes twinkle-star { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.7; } }
